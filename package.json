@@ -1,0 +1,27 @@
+{
+  "name": "sam-conecta",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Marketplace e central de administração compartilhada com Firebase e Mercado Pago",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "dev": "node scripts/dev.mjs",
+    "android": "python3 scripts/build_android.py"
+  },
+  "dependencies": {
+    "firebase": "13.4.0",
+    "firebase-admin": "14.5.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  },
+  "overrides": {
+    "@grpc/grpc-js": "1.14.7"
+  }
+}
